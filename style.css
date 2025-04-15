@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #002349;
+    color: #E0E4CA;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: #002349;
+}
+
+.navbar .logo {
+    color: white;
+    font-weight: bold;
+    padding-left: 120px;
+    font-size: 1.2rem;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    padding-right: 120px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.home {
+    position: relative;
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-left: 150px;
+    z-index: 1;
+}
+
+
+.home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgb(0, 35, 75, 1), rgba(0, 35, 75, 0.4), transparent);
+    z-index: 0;
+}
+
+
+.home-text {
+    z-index: 1;
+}
+
+.home-text p {
+    font-weight: 600;
+    color: #E0E4CA;
+    font-size: 1.5rem;
+}
+
+.home-text h2 {
+    font-size: 2rem;
+    color: white;
+}
+
+/* About Section */
+#about {
+    font-size: 2rem;
+    text-align: center;
+    padding: 50px 20px;
+    color: #E0E4CA;
+}
+
+.profil-img {
+    width: 400px;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    gap: 265px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.info div h4 {
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 1.9rem;
+    color: #E0E4CA;
+}
+
+.info-card {
+    max-width: 250px;
+}
+
+.info-card img {
+    width: 70px;
+    margin-bottom: 10px;
+}
+
+.info-card h4 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: white
+}
+
+.info-card ul {
+    list-style-position: inside;
+    padding-left: 0;
+    margin-left: 0;
+    text-align: left;
+    font-size: 1rem;
+}
+
+/* Portfolio */
+#portfolio {
+    font-size: 2rem;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.portfolio-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.portfolio-gallery .item {
+    width: 540px;
+}
+
+.portfolio-gallery img {
+    width: 100%;
+}
+
+.portfolio-gallery p{
+    font-size: 1.5rem;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+}
+
+/* Contact */
+#contact {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.contact-icons div img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.contact-icons p{
+    color: white;
+    font-size: 1.5rem;
+}
